@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="sq">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Muzeu i sendeve</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Kalo te përmbajtja</a>
+    <header>
+      <p>Programimi në WWW · Java II</p>
+      <h1>Muzeu i sendeve</h1>
+    </header>
+    <nav aria-label="Sendet e ekspozitës">
+      <a href="#celesi">Çelësi</a>
+      <a href="#filxhani">Filxhani</a>
+      <a href="#bileta">Bileta</a>
+    </nav>
+    <main id="main">
+      <p class="date">Ekspozita: <time datetime="2026-10-01">1 tetor 2026</time></p>
+
+      <div class="grid">
+        <article class="card" id="celesi">
+          <h2>Çelësi</h2>
+          <figure>
+            <img src="celesi.svg" alt="Një çelës bronzi me unazë të rrumbullakët" width="210" height="210" />
+            <figcaption>Hapja e një dere mund të jetë fillimi i një historie.</figcaption>
+          </figure>
+          <details>
+            <summary>Historia e fshehur</summary>
+            <p>Ky çelës hapte portën e një shtëpie të vjetër në rrugën e pazarit. Kur shtëpia u shit, pronari e mbajti çelësin në xhep për vite me radhë.</p>
+          </details>
+        </article>
+
+        <article class="card" id="filxhani">
+          <h2>Filxhani</h2>
+          <figure>
+            <img src="filxhani.svg" alt="Një filxhan blu me vesh" width="210" height="210" />
+            <figcaption>Një filxhan mbledh kujtime nga bisedat.</figcaption>
+          </figure>
+          <details>
+            <summary>Historia e fshehur</summary>
+            <p>Në çdo vizitë, nëna e shërbente kafenë në këtë filxhan. Ai nuk u përdor për askënd tjetër dhe sot ruhet në raftin e xhamit.</p>
+          </details>
+        </article>
+
+        <article class="card" id="bileta">
+          <h2>Bileta</h2>
+          <figure>
+            <img src="bileta.svg" alt="Një biletë e verdhë me vijë të pikuar për shqyerje" width="210" height="210" />
+            <figcaption>Një udhëtim i shkurtër, një kujtim i gjatë.</figcaption>
+          </figure>
+          <details>
+            <summary>Historia e fshehur</summary>
+            <p>Kjo biletë përdoret për një udhëtim me tren drejt detit. Pjesa e shqyer u hodh, kurse kjo mbeti si kujtim i verës së parë në qytet.</p>
+          </details>
+        </article>
+      </div>
+    </main>
+    <footer>Shembull mësimor · Të dhëna të sajuara · Vetëm front end</footer>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+/* Muzeu i sendeve · stili */
+:root {
+  --bg: #f3f6fb;
+  --card: #ffffff;
+  --ink: #14233c;
+  --text: #1b2433;
+  --line: #cfd9e6;
+  --accent: #0f766e;
+  --link: #1769a0;
+  --thumb: #f1f3f7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  margin: 1rem;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.skip {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  background: var(--ink);
+  color: #fff;
+  padding: 0.5rem 0.75rem;
+  z-index: 10;
+}
+.skip:focus {
+  left: 0.5rem;
+  top: 0.5rem;
+}
+
+header {
+  border-bottom: 3px solid var(--accent);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+header p {
+  margin: 0;
+}
+h1 {
+  color: var(--ink);
+  font-size: 2rem;
+  margin: 1.25rem 0 0.75rem;
+  line-height: 1.2;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+a {
+  color: var(--link);
+}
+a:focus-visible,
+summary:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.date {
+  margin: 0 0 1.25rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 1rem;
+  scroll-margin-top: 1rem;
+}
+.card:target {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px var(--accent);
+}
+.card h2 {
+  color: var(--ink);
+  font-size: 1.5rem;
+  margin: 1rem 0 0.5rem;
+}
+
+figure {
+  margin: 0 0 1rem;
+  padding: 0 1rem;
+}
+figure img {
+  display: block;
+  width: 100%;
+  max-width: 210px;
+  height: auto;
+  margin: 0 auto;
+  background: var(--thumb);
+}
+figcaption {
+  max-width: 210px;
+  margin: 0.5rem auto 0;
+}
+
+details {
+  padding: 0 0 0.25rem;
+}
+summary {
+  cursor: pointer;
+}
+details p {
+  margin: 0.5rem 0 0;
+}
+
+footer {
+  margin-top: 3rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto;
+  }
+}
