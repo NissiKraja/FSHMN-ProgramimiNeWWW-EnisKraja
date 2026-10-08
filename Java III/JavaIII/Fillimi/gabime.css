@@ -1,0 +1,30 @@
+/*
+  DIAGNOZA (kodi origjinal)
+
+  #poster { color: white; background: white; width: 700px; padding: 80px; }
+  .poster { color: #17263c; width: 100%; }
+
+  Gabimi 1 - konflikt specifike:
+    Të dy rregullat godasin të njëjtin element dhe vendosin `color`.
+    #poster ka specifikë (1,0,0), .poster ka (0,1,0). ID-ja fiton pavarësisht
+    renditjes, ndaj teksti del i bardhë mbi sfond të bardhë (i palexueshëm).
+
+  Gabimi 2 - tejkalim i gjerësisë:
+    `width: 700px` fiks + padding 80px nga secila anë. Në ekran 360 px paneli
+    del jashtë dritares (scroll horizontal) dhe teksti ngushtohet në ~540 px
+    brenda një kutie që as nuk futet. Gjithashtu `width: 100%` në .poster
+    humbi nga #poster.
+
+  RIPARIMI (pa !important):
+    - Heqim selektorin #poster; përdorim vetëm klasën .poster, pra një burim të vetëm.
+    - Ngjyra e tekstit nga variabla; sfondi mbetet i bardhë.
+    - width:100% + max-width në vend të 700px fiks; padding përgjegjës me clamp().
+*/
+.poster {
+  color: var(--color-ink, #17263c);
+  background: #fff;
+  width: 100%;
+  max-width: 700px;
+  margin-inline: auto;
+  padding: clamp(1rem, 6vw, 2rem);
+}

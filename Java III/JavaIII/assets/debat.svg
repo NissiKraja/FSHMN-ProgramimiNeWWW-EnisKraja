@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Logo e klubit të debatit">
+  <rect width="64" height="64" rx="14" fill="#0f6b5e"/>
+  <path d="M14 18h26a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H28l-8 7v-7h-6a4 4 0 0 1-4-4V22a4 4 0 0 1 4-4z" fill="#fff"/>
+  <path d="M46 28h4a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4h-2v6l-7-6h-6" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round"/>
+</svg>

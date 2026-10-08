@@ -1,0 +1,121 @@
+/* ===== Variabla: ngjyra dhe hapësira ===== */
+:root {
+  --color-ink: #17263c;
+  --color-bg: #f3f6fb;
+  --color-surface: #ffffff;
+  --color-accent: #0f6b5e;      /* kontrast me të bardhën ~6.3:1 */
+  --color-accent-dark: #0a4f45;
+  --color-border: #d5dbe6;
+  --color-focus: #b45309;       /* ngjyrë e ndryshme nga accent, e dukshme me Tab */
+
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --radius: 0.75rem;
+}
+
+/* box-sizing: width përfshin padding + border, pra paneli nuk fryhet */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  color: var(--color-ink);   /* trashëgohet nga të gjithë pasardhësit */
+  background: var(--color-bg);
+  line-height: 1.5;
+}
+
+/* ===== Skeleti i faqes ===== */
+.site-header {
+  padding: var(--space-2) var(--space-3) var(--space-3);
+  border-bottom: 3px solid var(--color-accent);
+}
+.site-header p {
+  margin: 0;
+}
+.site-header h1 {
+  margin: var(--space-2) 0 0;
+}
+
+main {
+  padding: var(--space-4) var(--space-2);
+}
+
+.site-footer {
+  padding: var(--space-3);
+  margin-top: var(--space-4);
+}
+
+/* ===== Karta (klasë e ripërdorshme) ===== */
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--space-4);
+}
+.card h2 {
+  margin: var(--space-3) 0 var(--space-2);
+  font-size: 1.4rem;
+  line-height: 1.25;
+}
+.card p {
+  margin: 0 0 var(--space-2);
+}
+.meta {
+  font-size: 0.95rem;
+}
+
+/* ===== Etiketat: dallohen me tekst + stil kufiri, jo vetëm ngjyrë ===== */
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.badge {
+  padding: 0.2rem 0.75rem;
+  border: 2px solid var(--color-accent);
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+.badge--free    { border-style: solid; }
+.badge--limited { border-style: dashed; }
+.badge--online  { border-style: solid; }
+
+/* ===== Lidhje / buton ===== */
+.btn {
+  display: inline-block;
+  padding: 0.6rem var(--space-2);
+  background: var(--color-accent);
+  color: #fff;
+  border-radius: 0.5rem;
+  text-decoration: underline;
+}
+.btn:hover {
+  background: var(--color-accent-dark);
+}
+
+/* ===== Focus i dukshëm (vetëm për tastierë) ===== */
+a:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 3px;
+}
+
+/* ===== Skip link: i fshehur derisa merr fokus ===== */
+.skip {
+  position: absolute;
+  left: var(--space-2);
+  top: -4rem;
+  padding: var(--space-1) var(--space-2);
+  background: var(--color-ink);
+  color: #fff;
+  border-radius: 0.25rem;
+}
+.skip:focus-visible {
+  top: var(--space-1);
+}
