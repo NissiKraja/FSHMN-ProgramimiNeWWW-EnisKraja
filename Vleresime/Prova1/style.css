@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  margin: 1rem;
+}
+
+.members {
+  width: 100%;
+  min-width: 0;
+  padding: 1rem;
+  border: 2px solid navy;
+  display: flex;
+  gap: 1rem;
+}
+
+.members article {
+  min-width: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.members p {
+  overflow-wrap: anywhere;
+}
+
+a:focus-visible {
+  outline: 3px solid navy;
+  outline-offset: 3px;
+}
+
+
+  
+@media (min-width: 800px) {
+  .members {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
