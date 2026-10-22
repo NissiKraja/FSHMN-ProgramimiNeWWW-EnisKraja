@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="sq">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Festivali që përshtatet në çdo ekran</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Kalo te përmbajtja</a>
+    <header>
+      <p>Programimi në WWW · Pikënisja</p>
+      <h1>Festivali që përshtatet në çdo ekran</h1>
+      <nav aria-label="Menuja kryesore">
+        <ul class="menu">
+          <li><a href="#programi">Programi</a></li>
+          <li><a href="#rreth">Rreth festivalit</a></li>
+          <li><a href="#vizita">Vizita</a></li>
+          <li><a href="#kontakti">Kontakti</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main">
+      <section id="rreth" aria-labelledby="rreth-titulli">
+        <h2 id="rreth-titulli">Rreth festivalit</h2>
+        <p>Festivali shkencor sjell tri ditë eksperimente, punëtori dhe vëzhgime të hapura për të gjithë. Programi lexohet njësoj mirë në telefon, në tabletë dhe në ekran të gjerë.</p>
+      </section>
+      <section id="programi" aria-labelledby="programi-titulli">
+        <h2 id="programi-titulli">Programi i aktiviteteve</h2>
+        <div class="cards">
+          <article class="card">
+            <img src="assets/aktiviteti-1.svg" alt="Ilustrim për aktivitetin: Fizikë" width="400" height="240" loading="lazy" />
+            <div class="card-body">
+              <p class="category">Fizikë</p>
+              <h3>Laboratori i fizikës së lirë</h3>
+              <p class="time"><span class="visually-hidden">Orari: </span>Të premten · 10:00–11:30</p>
+              <a class="details" href="detaje.html#a1">Shih detajet<span class="visually-hidden"> për Laboratori i fizikës së lirë</span></a>
+            </div>
+          </article>
+          <article class="card">
+            <img src="assets/aktiviteti-2.svg" alt="Ilustrim për aktivitetin: Kimi" width="400" height="240" loading="lazy" />
+            <div class="card-body">
+              <p class="category">Kimi</p>
+              <h3>Kimia e kuzhinës</h3>
+              <p class="time"><span class="visually-hidden">Orari: </span>Të premten · 12:00–13:00</p>
+              <a class="details" href="detaje.html#a2">Shih detajet<span class="visually-hidden"> për Kimia e kuzhinës</span></a>
+            </div>
+          </article>
+          <article class="card">
+            <img src="assets/aktiviteti-3.svg" alt="Ilustrim për aktivitetin: Informatikë" width="400" height="240" loading="lazy" />
+            <div class="card-body">
+              <p class="category">Informatikë</p>
+              <h3>Hackathon: algoritme për qytetin</h3>
+              <p class="time"><span class="visually-hidden">Orari: </span>Të shtunën · 09:00–13:00</p>
+              <a class="details" href="detaje.html#a3">Shih detajet<span class="visually-hidden"> për Hackathon: algoritme për qytetin</span></a>
+            </div>
+          </article>
+          <article class="card">
+            <img src="assets/aktiviteti-4.svg" alt="Ilustrim për aktivitetin: Biologji" width="400" height="240" loading="lazy" />
+            <div class="card-body">
+              <p class="category">Biologji</p>
+              <h3>Pylli nën mikroskop</h3>
+              <p class="time"><span class="visually-hidden">Orari: </span>Të shtunën · 14:00–15:30</p>
+              <a class="details" href="detaje.html#a4">Shih detajet<span class="visually-hidden"> për Pylli nën mikroskop</span></a>
+            </div>
+          </article>
+          <article class="card">
+            <img src="assets/aktiviteti-5.svg" alt="Ilustrim për aktivitetin: Ndërdisiplinore" width="400" height="240" loading="lazy" />
+            <div class="card-body">
+              <p class="category">Ndërdisiplinore</p>
+              <h3>Laboratori ndërdisiplinor i fizikës kuantike, kimisë organike dhe robotikës për nxënësit e çdo moshe</h3>
+              <p class="time"><span class="visually-hidden">Orari: </span>Të dielën · 10:00–12:30</p>
+              <a class="details" href="detaje.html#a5">Shih detajet<span class="visually-hidden"> për Laboratori ndërdisiplinor i fizikës kuantike, kimisë organike dhe robotikës për nxënësit e çdo moshe</span></a>
+            </div>
+          </article>
+          <article class="card">
+            <img src="assets/aktiviteti-6.svg" alt="Ilustrim për aktivitetin: Astronomi" width="400" height="240" loading="lazy" />
+            <div class="card-body">
+              <p class="category">Astronomi</p>
+              <h3>Nata e yjeve</h3>
+              <p class="time"><span class="visually-hidden">Orari: </span>Të dielën · 20:00–22:00</p>
+              <a class="details" href="detaje.html#a6">Shih detajet<span class="visually-hidden"> për Nata e yjeve</span></a>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="vizita" aria-labelledby="vizita-titulli">
+        <h2 id="vizita-titulli">Vizita</h2>
+        <p>Hyrja është falas. Aktivitetet fillojnë në orarin e shënuar dhe vendet janë të kufizuara, prandaj ejani herët.</p>
+      </section>
+      <section id="kontakti" aria-labelledby="kontakti-titulli">
+        <h2 id="kontakti-titulli">Kontakti</h2>
+        <p>Për pyetje shkruani te organizatorët përmes faqes zyrtare të festivalit.</p>
+      </section>
+    </main>
+    <footer>Shembull mësimor · Të dhëna të sajuara · Vetëm front end</footer>
+  </body>
+</html>
